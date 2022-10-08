@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+.container {
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 300px;
+}
+
+.title {
+  margin: 0;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.sub-title {
+  display: inline-block;
+  margin: 5px 0 20px;
+  opacity: 0.8;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+header {
+  color: antiquewhite;
+  background: rgb(104, 104, 193);
+  padding: 30px 20px;
+}
+
+input {
+  padding: 10px 15px;
+  border-radius: 50px;
+  border: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  color: aliceblue;
+  font-size: 1rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+.user-list {
+  max-height: 400px;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+}
+
+.user-list li img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.user-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  padding: 20px;
+}
+
+.user-list li:not(:last-of-type) {
+  border-bottom: 1px solid grey;
+}
+
+.user-list .user-info {
+  margin-left: 2rem;
+}
+
+.user-list .user-info h4 {
+  margin-bottom: 0.7rem;
+}
+
+.user-list li.hide {
+  display: none;
+}/*# sourceMappingURL=style.css.map */
